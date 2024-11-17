@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valid Document</title>
+    <style>
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('https://source.unsplash.com/1920x1080/?nature') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .container img {
+            width: 150px;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+        }
+
+        .container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            animation: textGlow 1.5s infinite alternate;
+            color: #00ff7f;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            color: #b2ffcc;
+        }
+
+        .button {
+            text-decoration: none;
+            color: #fff;
+            background: #00b359;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: #00994d;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes textGlow {
+            from {
+                text-shadow: 0 0 10px #00ff7f, 0 0 20px #00ff7f, 0 0 30px #00ff7f;
+            }
+            to {
+                text-shadow: 0 0 20px #00ff7f, 0 0 40px #00ff7f, 0 0 50px #00ff7f;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Document Validated</h1
+        <p>Your document has been successfully verfed. Everything looks perfect!</p>
+        <a href="#" class="button">Continue</a>
+    </div>
+</body>
+</html>
