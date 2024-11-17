@@ -9,8 +9,8 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/valid" element={<Valid />} />
-          <Route path="/invalid" element={<Invalid />} />
+          <Route path="/correct" element={<Valid />} />
+          <Route path="/incorrect" element={<Invalid />} />
         </Routes>
       </div>
     </Router>
